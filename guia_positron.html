@@ -64,6 +64,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="atalhos" class="level2">
+<h2 class="anchored" data-anchor-id="atalhos">Atalhos</h2>
 <section id="positron" class="level3">
 <h3 class="anchored" data-anchor-id="positron">Positron</h3>
 <table class="caption-top table">
@@ -162,12 +164,76 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
+<section id="assistentes" class="level3">
+<h3 class="anchored" data-anchor-id="assistentes">Assistentes</h3>
+<p>No momento, é possível utilizar os seguintes modelos no Positron.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 27%">
+<col style="width: 27%">
+<col style="width: 22%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Provider</th>
+<th style="text-align: center;">Chat</th>
+<th style="text-align: center;">Code Completions</th>
+<th style="text-align: left;">Authentication</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Anthropic</td>
+<td style="text-align: center;">ok</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: left;">API Key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GitHub Copilot (Preview)</td>
+<td style="text-align: center;">ok</td>
+<td style="text-align: center;">ok</td>
+<td style="text-align: left;">GitHub OAuth</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Amazon Bedrock (Preview)</td>
+<td style="text-align: center;">ok</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: left;">AWS CLI or Posit Workbench Managed Credentials</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Snowflake Cortex (Preview)</td>
+<td style="text-align: center;">ok</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: left;">API Key or Posit Workbench Managed Credentials</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">OpenAI (Preview)</td>
+<td style="text-align: center;">ok</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: left;">API Key</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Custom Provider (Experimental)</td>
+<td style="text-align: center;">ok</td>
+<td style="text-align: center;">&nbsp;</td>
+<td style="text-align: left;">API Key</td>
+</tr>
+</tbody>
+</table>
+<p>Para configurar os assistentes, acesse <a href="https://positron.posit.co/assistant-getting-started.html">https://positron.posit.co/assistant-getting-started.html</a></p>
+<p>Sobre utilizar OpenAI de assistente: OpenAI provider support is currently in preview and must be manually enabled. Run the command Preferences: Open User Settings (JSON) and add the following to your settings file:</p>
+<p>“positron.assistant.enabledProviders”: [“openai-api”]</p>
+<p>Isso vai abrir o seguinte campo para adicionar o modelo da OpenAI.</p>
+<p><img src="openai.png" class="img-fluid"></p>
+</section>
 <section id="links-úteis" class="level3">
 <h3 class="anchored" data-anchor-id="links-úteis">Links úteis:</h3>
 <ul>
 <li>sobre notebook no positron: https://posit.co/blog/announcing-the-positron-notebook-editor-for-jupyter-notebooks/</li>
 <li><a href="https://www.youtube.com/watch?v=TrN-FMcOsOA&amp;t=1675s">Youtube - AI-Powered Data Science in Positron</a></li>
 </ul>
+</section>
 </section>
 
 </main>
